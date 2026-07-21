@@ -1,4 +1,11 @@
 from src.ML_PROJECT import logger
+from src.ML_PROJECT.exception import customeException
+import sys
 
-if __name__ == "__main__":
-    logger.logging.info("this logging file call in app.py")
+try:
+    a=10
+    b=0
+    c=a / b
+except Exception as e:
+    logger.logging.info(customeException(e, sys))
+    raise Exception(e, sys)
