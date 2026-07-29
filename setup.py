@@ -11,8 +11,6 @@ def get_requirements(path:str)->List[str]:
         requirements.remove("-e .")
     return(requirements)
 
-
-
 setup(
     name='MLproject',
     version='0.0.1',
