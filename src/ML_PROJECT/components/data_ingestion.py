@@ -24,3 +24,6 @@ class DataIngestion:
 
         except Exception as e:
             raise customeException(e, sys)
+
+obj=DataIngestion()
+obj.read_data()

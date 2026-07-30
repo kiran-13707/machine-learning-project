@@ -12,5 +12,11 @@ PASSWORD=os.getenv("password")
 DB=os.getenv("db")
 
 def read_sql_data():
-    print("ENV DATA :- ",HOST, ROOT, PASSWORD, DB)
+    # print("ENV DATA :- ",HOST, ROOT, PASSWORD, DB)
+    logger.logging.info("Start a reading Data From MYSQL")
+    try:
+        pass
+    except Exception as e:
+        logger.logging.info(customeException(e, sys))
+        raise customeException(e, sys)
 
