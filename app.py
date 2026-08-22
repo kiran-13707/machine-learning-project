@@ -4,8 +4,8 @@ import sys
 from src.ML_PROJECT.components.data_ingestion import DataIngestion
 
 try:
-    dataIngestionobj=DataIngestion
-    DataIngestion.read_data()
+    dataIngestionobj=DataIngestion()
+    dataIngestionobj.read_data()
     
 except Exception as e:
     logger.logging.info(customeException(e, sys))
